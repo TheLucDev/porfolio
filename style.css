@@ -527,6 +527,10 @@ span {
     grid-template-columns: repeat(2, 1fr);
     margin: 0 5rem;
   }
+
+  .service-box {
+    min-height: 200px;
+  }
 }
 
 @media (max-width: 991px) {
