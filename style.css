@@ -192,7 +192,7 @@ span {
 .text-animation span::before {
   content: 'Web Developer';
   color: var(--main-color);
-  animation: words 20s infinite;
+  animation: words 12s infinite;
 }
 .text-animation span::after {
   content: '';
@@ -213,24 +213,24 @@ span {
 
 @keyframes words {
   0%,
-  /* 20% {
-    content: "Front-End Developer..";
+  33% {
+    content: 'Front-End Developer..';
   }
-  21%,
-  40% {
-    content: "Back-End Developer..";
+  34%,
+  66% {
+    content: 'Back-End Developer..';
   }
-  41%,
-  60% {
-    content: "Full Stack Engineer";
+  67%,
+  /* 60% {
+    content: 'Full Stack Developer';
   }
   61%,
   80% {
-    content: "Front-End Developer..";
+    content: 'Front-End Developer..';
   }
   81%, */
   100% {
-    content: 'Full Stack Engineer';
+    content: 'Full Stack Developer';
   }
 }
 
@@ -314,7 +314,7 @@ span {
 .about-content .text-animation span::before {
   content: 'Web Developer';
   color: var(--main-color);
-  animation: words 20s infinite;
+  animation: words 12s infinite;
 }
 .about-content .text-animation span::after {
   content: '';
@@ -375,10 +375,10 @@ span {
   display: flex;
   flex-direction: column;
   text-align: left;
-  max-height: 200px;
+  /* max-height: 200px; */
   justify-content: center;
   align-items: baseline;
-  padding: 5em;
+  padding: 2em 4em;
 }
 
 .services-info h4 {
@@ -387,8 +387,8 @@ span {
   margin-bottom: 1rem;
 }
 
-.services-info p {
-  font-size: 1.6rem;
+.services-info li {
+  font-size: 1.3rem;
   font-weight: 400;
   max-height: 100px;
   margin: auto;
@@ -402,7 +402,10 @@ span {
   margin-bottom: 3rem;
   color: white;
 }
-
+.contact-description {
+  text-align: center;
+  font-size: 1.75rem;
+}
 .contact form {
   max-width: 70rem;
   margin: 1rem auto;
@@ -497,7 +500,14 @@ span {
   font-size: 16px;
   color: white;
 }
-
+.email {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+.email:hover {
+  border-bottom: 1px solid var(--main-color);
+}
 @media (max-width: 1285px) {
   html {
     font-size: 55%;
